@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+  <!-- Circle-->
+  <object name="minimapPanel">
+    <!-- Black background circle-->
+    <object
+      type="image"
+      size="3 3 100% 100%"
+      sprite="stretched:session/background_circle.png"
+      ghost="true"
+    />
+    <!-- MiniMap -->
+    <object
+      name="minimap"
+      size="2 2 100% 100%"
+      type="minimap"
+      mask="true"
+      flare_texture_count="16"
+      flare_render_size="32"
+      flare_animation_speed="11"
+      flare_interleave="true"
+      flare_lifetime_seconds="6"
+    />
+    <!-- Minimap circle -->
+    <object
+      type="image"
+      sprite="stretched:session/background_minimap_circle.png"
+      size="0 0 100% 100%"
+      ghost="true"
+    />
+  </object>
+  <!-- Hover panel below the minimap -->
+  <object name="hoverPanel" type="image" sprite="minimapHoverPanel">
+    <!-- Flare Button -->
+    <object
+      name="flareButton"
+      type="button"
+      size="72% 40%-1 86% 94%"
+      tooltip_style="sessionToolTipCircleBottom"
+      hotkey="session.flareactivate"
+      sprite="MinimapFlareButtonNormal"
+      sprite_pressed="MinimapFlareButtonNormal"
+      sprite_over="MinimapFlareButtonBright"
+      mouse_event_mask="texture:session/minimap_buttons/minimap-flare.png"
+      sprite_disabled="MinimapFlareButtonGrey"
+      sound_pressed="audio/interface/ui/ui_button_click.ogg"
+    />
+    <!-- Score Button -->
+    <object
+      name="scoreButton"
+      type="button"
+      size="2%-1 6% 16%-1 60%+1"
+      tooltip_style="sessionToolTipCircleBottom"
+      sprite="MinimapScoreButtonNormal"
+      sprite_pressed="MinimapScoreButtonNormal"
+      sprite_over="MinimapScoreButtonBright"
+      mouse_event_mask="texture:session/minimap_buttons/minimap-score.png"
+      sound_pressed="audio/interface/ui/ui_button_click.ogg">
+      <action on="Press">g_stats.toggle();</action>
+    </object>
+    <!-- Diplomacy Colors Button -->
+    <object
+      name="diplomacyColorsButton"
+      type="button"
+      size="14% 40%-1 28% 94%"
+      tooltip_style="sessionToolTipCircleBottom"
+      hotkey="session.diplomacycolors"
+      sound_pressed="audio/interface/ui/ui_button_click.ogg"
+    />
+  </object>
+</object>

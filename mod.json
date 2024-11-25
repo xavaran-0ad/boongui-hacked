@@ -1,0 +1,8 @@
+{
+  "name": "boonGUI",
+  "version": "0.0.1",
+  "label": "boonGUI-hacked",
+  "description": "Hacked BoonGUI with cheat features.",
+  "ignoreInCompatibilityChecks": true,
+  "dependencies": ["0ad=0.0.26"]
+}

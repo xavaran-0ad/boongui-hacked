@@ -1,4 +1,8 @@
-# boongui-hacked
-Hacked boonGUI that displays all stats (including enemy) in real time. Incompatible with autociv-based mods (e.g. hyper0ad)
-The other features of BoonGUI are left untouched. 
-Add comments to tell me what additional features you would like. 
+Hacked BoonGUI
+
+-Reveal stats of enemies
+-Reveal training and research activities of enemies
+-Reveal all chats
+
+Incompatible with hyper0ad or any autociv-based mods
+Incompatible with reveal map mod
